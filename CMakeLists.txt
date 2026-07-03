@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.16)
+project(practicas_analisis_numerico LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+add_executable(metodo_biseccion 01_raices/metodo_biseccion.cpp)
+add_executable(metodo_regla_falsa 01_raices/metodo_regla_falsa.cpp)
+add_executable(metodo_newton_raphson 01_raices/metodo_newton_raphson.cpp)
+add_executable(metodo_gauss_seidel 02_sistemas_lineales/metodo_gauss_seidel.cpp)
+add_executable(matriz_inversa_gauss_jordan 02_sistemas_lineales/matriz_inversa_gauss_jordan.cpp)
+add_executable(interpolacion_lagrange 03_interpolacion/interpolacion_lagrange.cpp)
+add_executable(serie_maclaurin_exponencial 04_series/serie_maclaurin_exponencial.cpp)
+add_executable(integracion_rectangulos 05_integracion/integracion_rectangulos.cpp)
+add_executable(integracion_trapecio_compuesto 05_integracion/integracion_trapecio_compuesto.cpp)
